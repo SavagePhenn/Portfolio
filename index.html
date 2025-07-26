@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bilal Thair | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="intro">
+    <div class="intro-content">
+      <h1 id="name">Bilal Thair</h1>
+      <div id="menu" class="hidden">
+        <button onclick="showSection('about')">About Me</button>
+        <button onclick="showSection('projects')">My Projects</button>
+        <button onclick="showSection('contact')">Contact Me</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- POPUP OVERLAY -->
+  <div id="popup-overlay" class="hidden">
+    <div id="popup">
+      <span id="close-btn" onclick="closePopup()">×</span>
+      <div id="popup-content"></div>
+    </div>
+  </div>
+
+  <!-- PROJECTS SECTION -->
+  <div id="projects" class="section hidden">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <h3>Chat-App (BilalGPT)</h3>
+      <p>An animated, smart chatbot powered by AI (mock replies if OpenAI key fails). Built with Node.js, Express, and Socket.IO.</p>
+      <a href="Chat-App/index.html" target="_blank">Launch Chat-App 🚀</a>
+    </div>
+
+    <!-- Add more projects below here if needed -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
