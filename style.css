@@ -1,13 +1,25 @@
+/* === General Styles === */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
+/* === Water Ripple Canvas === */
+#ripple-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* === Intro Section === */
 #intro {
   height: 100vh;
   display: flex;
@@ -58,7 +70,7 @@ button:hover {
   display: none !important;
 }
 
-/* Popup styles with glassmorphism */
+/* === Popup === */
 #popup-overlay {
   position: fixed;
   top: 0;
@@ -81,7 +93,7 @@ button:hover {
   border-radius: 20px;
   max-width: 600px;
   width: 90%;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
   animation: fadeIn 0.4s ease-in-out forwards;
   position: relative;
 }
@@ -104,7 +116,7 @@ button:hover {
   transform: rotate(90deg);
 }
 
-/* Animations */
+/* === Animations === */
 @keyframes slideDown {
   0% { transform: translateY(-50px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
@@ -114,44 +126,7 @@ button:hover {
   0% { opacity: 0; transform: scale(0.95); }
   100% { opacity: 1; transform: scale(1); }
 }
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(270deg, #1e3a8a, #9333ea, #2563eb, #0ea5e9);
-  background-size: 800% 800%;
-  animation: gradientFlow 15s ease infinite;
-  z-index: -1;
-  opacity: 0.4;
-}
 
-@keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(270deg, #1e3a8a, #9333ea, #2563eb, #0ea5e9);
-  background-size: 800% 800%;
-  animation: gradientFlow 15s ease infinite;
-  z-index: -1;
-  opacity: 0.4;
-}
-
-@keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 .project-button {
   padding: 12px 24px;
   font-size: 16px;
@@ -167,4 +142,3 @@ body::before {
 .project-button:hover {
   background-color: #2563eb;
 }
-
