@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Code Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cinematic-loader">
+    <canvas id="matrix-canvas"></canvas>
+  <div class="loader-inner">
+    <div class="intro-text">
+      <span id="typewriter-text"></span><span class="cursor">|</span>
+    </div>
+    <div class="cinematic-title">WELCOME TO THE EDITOR</div>
+  </div>
+</div>
+
+  <div class="editor-container">
+    <div class="editor-panels">
+      <div class="panel">
+        <h3>HTML</h3>
+        <textarea id="html-code" placeholder="Write HTML here..."></textarea>
+      </div>
+      <div class="panel">
+        <h3>CSS</h3>
+        <textarea id="css-code" placeholder="Write CSS here..."></textarea>
+      </div>
+      <div class="panel">
+        <h3>JavaScript</h3>
+        <textarea id="js-code" placeholder="Write JS here..."></textarea>
+      </div>
+    </div>
+    
+    <button id="run-btn">▶ Run</button>
+
+    <div class="output-panel">
+      <h3>Live Preview</h3>
+      <iframe id="output" sandbox="allow-scripts"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -44,14 +44,13 @@ document.addEventListener("mousemove", (e) => {
   addRipple(e.clientX, e.clientY);
 });
 document.addEventListener("click", (e) => {
-  addRipple(e.clientX, e.clientY); // Splash on click
+  addRipple(e.clientX, e.clientY);
 });
 
 // === Main Animation Loop ===
 function animate() {
   drawBackgroundWave();
 
-  // Ripple rendering
   for (let i = 0; i < ripples.length; i++) {
     let r = ripples[i];
     ctx.beginPath();
@@ -69,7 +68,7 @@ function animate() {
 }
 animate();
 
-// === Popup logic stays the same ===
+// === Popup logic ===
 function showSection(section) {
   const contentMap = {
     about: `
@@ -81,6 +80,7 @@ function showSection(section) {
       <button class="project-button" onclick="window.open('./To-Do-App/index.html', '_blank')">📝 Project 1 – To-Do App</button>
       <button class="project-button" onclick="window.open('./Calculator-App/index.html', '_blank')">🧮 Project 2 – Calculator App</button>
       <button class="project-button" onclick="window.open('./Chat-App/index.html', '_blank')">💬 Project 3 – Chat App</button>
+      <button class="project-button" onclick="window.open('./Code-Editor/index.html', '_blank')">💻 Project 4 – Online Code Editor</button>
     `,
     contact: `
       <h2>Contact Me</h2>
