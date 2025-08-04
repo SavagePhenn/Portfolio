@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BilalPay | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0e6b415.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar glass">
+      <h2>BilalPay</h2>
+      <p id="sidebar-username">@user</p>
+      <ul>
+        <li><a href="dashboard.html" class="active"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+        <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+        <li><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <section class="top-card glass">
+        <h1>Hello, <span id="usernameDisplay">User</span></h1>
+        <h2>Balance: <span id="balanceDisplay">KSH 0.00</span></h2>
+        <button id="addFundsBtn"><i class="fas fa-plus"></i> Add Fake Funds</button>
+      </section>
+
+      <section class="transfer-section glass">
+        <h3>Send Money</h3>
+        <input type="text" id="transfer-to" placeholder="Recipient Username">
+        <input type="number" id="transfer-amount" placeholder="Amount in KSH">
+        <button id="transferBtn"><i class="fas fa-paper-plane"></i> Send</button>
+        <p class="error" id="transfer-error"></p>
+      </section>
+
+      <section class="history-section glass">
+        <h3>Transaction History</h3>
+        <ul id="historyList"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

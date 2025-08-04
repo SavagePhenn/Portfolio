@@ -77,10 +77,11 @@ function showSection(section) {
     `,
     projects: `
       <h2>My Projects</h2>
-      <button class="project-button" onclick="window.open('./To-Do-App/index.html', '_blank')">📝 Project 1 – To-Do App</button>
-      <button class="project-button" onclick="window.open('./Calculator-App/index.html', '_blank')">🧮 Project 2 – Calculator App</button>
-      <button class="project-button" onclick="window.open('./Chat-App/index.html', '_blank')">💬 Project 3 – Chat App</button>
-      <button class="project-button" onclick="window.open('./Code-Editor/index.html', '_blank')">💻 Project 4 – Online Code Editor</button>
+      <button class="project-button" onclick="window.open('./To-Do-App/index.html', '_blank')"> Project 1 – To-Do App</button>
+      <button class="project-button" onclick="window.open('./Calculator-App/index.html', '_blank')"> Project 2 – Calculator App</button>
+      <button class="project-button" onclick="window.open('./Chat-App/index.html', '_blank')"> Project 3 – Chat App</button>
+      <button class="project-button" onclick="window.open('./Code-Editor/index.html', '_blank')"> Project 4 – Online Code Editor</button>
+      <button class="project-button" onclick="window.open('./BilalPay/login.html', '_blank')"> Project 5 – BilalPay (Bank Demo)</button>
     `,
     contact: `
       <h2>Contact Me</h2>
